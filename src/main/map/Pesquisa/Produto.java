@@ -1,37 +1,35 @@
-package list.OperacoesBasicas;
+package main.map.Pesquisa;
 
-public class Item {
-
-    //atributo
+public class Produto {
+    //Atributo
     private String nome;
-    private double preco;
     private int quantidade;
+    private double preco;
 
-    public Item(String nome, double preco, int quantidade) {
-        this.nome =nome;
-        this.preco = preco;
+    public Produto(String nome, int quantidade, double preco) {
+        this.nome = nome;
         this.quantidade = quantidade;
+        this.preco = preco;
     }
 
     public String getNome() {
         return nome;
     }
 
-    public double getPreco() {
-        return preco;
-    }
-
     public int getQuantidade() {
         return quantidade;
     }
 
+    public double getPreco() {
+        return preco;
+    }
+
     @Override
     public String toString() {
-        return "Item{" +
+        return "Produto{" +
                 "nome='" + nome + '\'' +
-                ", preco=" + preco +
                 ", quantidade=" + quantidade +
+                ", preco=" + preco +
                 '}';
     }
 }
-
